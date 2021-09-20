@@ -1,2 +1,2 @@
-let a = "Luciano"; // Luciano Cardoso
+let a = "Luciano";
 console.log(a);
