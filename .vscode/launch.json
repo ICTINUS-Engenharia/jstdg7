@@ -13,13 +13,21 @@
             ],
             "type": "pwa-node"
         },
-        
         {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "https://localhost:8080",
             "webRoot": "${workspaceFolder}",
+        },
+        {
+            "name": "Launch NPM Program",
+            "program": "${workspaceFolder}/jstdg7/ch01/Teste.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
         }
     ]
 }
