@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Launch Program",
-            "program": "${workspaceFolder}/ch01/Teste.js",
+            "program": "${workspaceFolder}/Teste.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
@@ -22,7 +22,7 @@
         },
         {
             "name": "Launch NPM Program",
-            "program": "${workspaceFolder}/jstdg7/ch01/Teste.js",
+            "program": "${workspaceFolder}/jstdg7/Teste.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
