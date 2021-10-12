@@ -18,3 +18,6 @@ const { [myKey]: myNewValue, family: oldFamily, age: oldAge } = benjaminButton; 
 console.log(myNewValue);
 console.log(oldFamily);
 console.log(oldAge);
+
+let i;
+let sum;
