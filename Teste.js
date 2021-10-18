@@ -29,17 +29,9 @@
 
 // console.log(square(5));
 
-const geval = eval;               // Using another name does a global eval
-let x = "global", y = "global";   // Two global variables
-function f() {                    // This function does a local eval
-    let x = "local";              // Define a local variable
-    eval("x += 'changed';");      // Direct eval sets local variable
-    return x;                     // Return changed local variable
-}
-function g() {                    // This function does a global eval
-    let y = "local";              // A local variable
-    geval("y += 'changed';");     // Indirect eval sets global variable
-    return y;                     // Return unchanged local variable
-}
-console.log(f(), x); // Local variable changed: prints "localchanged global":
-console.log(g(), y); // Global variable changed: prints "local globalchanged":
+let options = { timeout: 0, title: "", verbose: false, n: null };
+console.log(options.timeout ?? 1000)     // => 0: as defined in the object
+console.log(options.title ?? "Untitled") // => "": as defined in the object
+console.log(options.verbose ?? true)     // => false: as defined in the object
+console.log(options.quiet ?? false)      // => false: property is not defined
+console.log(options.n ?? 10)             // => 10: property is null
