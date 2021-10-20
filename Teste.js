@@ -34,4 +34,4 @@ console.log(options.timeout ?? 1000)     // => 0: as defined in the object
 console.log(options.title ?? "Untitled") // => "": as defined in the object
 console.log(options.verbose ?? true)     // => false: as defined in the object
 console.log(options.quiet ?? false)      // => false: property is not defined
-console.log(options.n ?? 10)             // => 10: property is null
+console.log(options.n ?? 11)             // => 10: property is null
