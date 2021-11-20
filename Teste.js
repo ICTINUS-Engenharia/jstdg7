@@ -29,9 +29,26 @@
 
 // console.log(square(5));
 
-let options = { timeout: 0, title: "", verbose: false, n: null };
-console.log(options.timeout ?? 1000)     // => 0: as defined in the object
-console.log(options.title ?? "Untitled") // => "": as defined in the object
-console.log(options.verbose ?? true)     // => false: as defined in the object
-console.log(options.quiet ?? false)      // => false: property is not defined
-console.log(options.n ?? 11)             // => 10: property is null
+let empty = {};                          // An object with no properties
+let point = { x: 0, y: 0 };              // Two numeric properties
+let p2 = { x: point.x, y: point.y + 1 };   // More complex values
+let book = {
+    "main title": "JavaScript",          // These property names include spaces,
+    "sub-title": "The Definitive Guide", // and hyphens, so use string literals.
+    for: "all audiences",                // for is reserved, but no quotes.
+    author: {                            // The value of this property is
+        firstname: "David",              // itself an object.
+        surname: "Flanagan"
+    }
+};
+
+let o = new Object();  // Create an empty object: same as {}.
+let a = new Array();   // Create an empty array: same as [].
+let d = new Date();    // Create a Date object representing the current time
+let r = new Map();     // Create a Map object for key/value mapping
+
+let o1 = Object.create({ x: 1, y: 2 });     // o1 inherits properties x and y.
+o1.x + o1.y                               // => 3
+
+console.log(o1);
+
